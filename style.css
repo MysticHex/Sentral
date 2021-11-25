@@ -1,0 +1,69 @@
+/* sstmh2.php */
+
+.text1 {
+    margin-left: auto;
+    margin-right: auto;
+    height: 430px;
+    width: 780px;
+    background-color: #5196ff;
+    border-radius: 25px;
+    margin-top: +50px;
+}
+
+.table1 {
+    width: 560px;
+    margin-left: auto;
+    margin-right: auto;
+    color: aliceblue;
+}
+
+.heading1 {
+    text-align: center;
+    padding-bottom: +25px;
+}
+
+.td1 {
+    text-align: right;
+}
+
+#tgl {
+    font-size: 16px;
+    padding-bottom: +10px;
+}
+
+.td2 {
+    text-align: center;
+    font-size: 24px;
+    padding-bottom: +15px;
+}
+
+.td3 {
+    font-size: 16px;
+}
+
+.td4 {
+    text-align: center;
+    padding-top: +30%;
+    font-size: 15px;
+}
+
+.link {
+    text-decoration: none;
+    color: aliceblue;
+}
+
+
+/*
+.link :hover{
+    color: red;
+    text-decoration: underline;
+}*/
+
+#lk :hover {
+    color: red;
+    text-decoration: underline;
+}
+
+.link :visited {
+    color: aliceblue;
+}
