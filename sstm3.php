@@ -66,6 +66,17 @@ $run = mysqli_query($conn, $mask);
             </tr>
         </table>
     </div>
+    <a id="wa" href="h1.php" target="_blank"><img id="wa" src="./asset/WA.png" alt=""></a>
 </body>
 
 </html>
+
+<style>
+	#wa {
+		position: fixed;
+		float: right;
+		top: 100px;
+		height: 70px;
+		right: 20px
+	}
+</style>
