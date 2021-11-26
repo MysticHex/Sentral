@@ -13,11 +13,11 @@ $tglambil = date('d.m.Y', strtotime('+2days', strtotime($tglmsk)));
 
 
 //Membuat connection 
-$conn = mysqli_connect('localhost:3307', 'root', '', 'reg');
+$conn = mysqli_connect('localhost: 3307', 'root', '', 'reg');
 
-$mask="INSERT INTO `pesanan_kilo`(`nama`, `Kilopesanan`, `tanggal_masuk`, `tanggal_keluar`) VALUES ('$nm',$kl,'$tglmsk','$tglambil)";
+$mask = "INSERT INTO `pesanan_kilo`(`nama`, `Kilopesanan`, `tanggal_masuk`, `tanggal_keluar`,`Status`) VALUES ('$nm',$kl,'$tglmsk','$tglambil', default)";
 
-$run=mysqli_query($conn,$mask);
+$run = mysqli_query($conn, $mask);
 
 ?>
 <!DOCTYPE html>
