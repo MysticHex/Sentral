@@ -26,7 +26,7 @@ $pass = ($_POST['pw']);
 $s = "SELECT * FROM `users` WHERE username='$name' AND pass='$pass'";
 $result = mysqli_query($conn, $s);
 $num = mysqli_num_rows($result);
-if ($num == 0) {
+if ($num == 1) {
     echo "Login Succes";
     header('Refresh: 0.2; URL=h1.php');
 } else {
