@@ -94,7 +94,7 @@ $conn = mysqli_connect($servername, $username, $password, 'reg');
         
         $nm = $_POST['nama'];
         if ($opt == "Kiloan") {
-            if ($resultCheck >= 0) {
+            if ($resultCheck > 0) {
                 $s = "SELECT * FROM pesanan_kilo WHERE nama='$nm';";
                 $sel = mysqli_query($conn, $s);
                 $resultCheck = mysqli_num_rows($sel);
@@ -172,7 +172,7 @@ $conn = mysqli_connect($servername, $username, $password, 'reg');
             $sel = mysqli_query($conn, $s);
             $resultCheck = mysqli_num_rows($sel);
 
-            if ($resultCheck >= 0) {
+            if ($resultCheck== 1) {
                 echo "<table border='1' style='text-align: center;'>
     
                 <tr>
@@ -200,6 +200,8 @@ $conn = mysqli_connect($servername, $username, $password, 'reg');
                     echo "<td>" . $row['pakaian_b'] . "</td>";
 
                     echo "<td>" . $row['pakaian_jins'] . "</td>";
+                    
+                    echo "<td>" . $row['harga'] . "</td>";
 
                     echo "<td>" . $row['status'] . "</td>";
 
@@ -207,7 +209,7 @@ $conn = mysqli_connect($servername, $username, $password, 'reg');
                 }
 
                 echo "</table>";
-            } else if ($resultCheck <= 0) {
+            } else if ($resultCheck == 0) {
                 echo "Data not found";
             }
         }
